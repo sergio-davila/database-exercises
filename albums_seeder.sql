@@ -1,7 +1,7 @@
 -- Insert statement for albums
 use codeup_test_db;
 
--- truncate albums;
+truncate albums;
 
 insert into albums (artist, name, release_date, genre, sales)
 values ('Michael Jackson', 'Thriller', 1982, 'Pop, Rock, R&B', 47.3),
@@ -28,11 +28,11 @@ values ('Michael Jackson', 'Thriller', 1982, 'Pop, Rock, R&B', 47.3),
        ('Madonna', 'The Immaculate Collection', 1990, 'Pop, Dance', 19.4),
        ('The Beatles', 'Abbey Road', 1969, 'Rock', 14.4),
        ('ABBA', 'Gold: Greatest Hits', 1992, 'Pop, Disco', 23.0),
-       ('Bruce Springsteen', 'Born in the U.S.A.', 1984, 'Heartland Rock', 19.6),
+       ('Bruce Springsteen', 'Born in the USA', 1984, 'Heartland Rock', 19.6),
        ('Pink Floyd', 'The Wall', 1979, 'Progressive Rock', 18.7),
        ('James Horner', 'Titanic: Music from the Motion Picture', 1997, 'Film Score', 18.1),
        ('Dire Straits', 'Brothers in Arms', 1985, 'Roots Rock, Blues Rock, Soft Rock', 17.7),
-       ('Nirvana', 'Nevermind', 1991, 'Grunge, Alternative Rock', 16.7,),
+       ('Nirvana', 'Nevermind', 1991, 'Grunge, Alternative Rock', 16.7),
        ('Santana', 'Supernatural', 1999, 'Latin Rock', 20.5),
        ('Guns N Roses', 'Appetite For Destruction', 1987, 'Hard Rock', 21.9),
        ('Elton John', 'Goodbye Yellow Brick Road', 1973, 'Rock, Pop Rock, Glam Rock', 8.5);
