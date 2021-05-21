@@ -17,7 +17,7 @@ and month(birth_date) = 12
 and day(birth_date) = 25
 order by birth_date ASC, hire_date DESC;
 
-select *, datediff(curdate(), hire_date) as 'Days worked since hire date' from employees
+select *, datediff(curdate(), hire_date) as days_worked from employees
 where year(hire_date) between 1990 and 1999
 and month(birth_date) = 12
-and day(birth_date) = 25;
+and day(birth_date) = 25 order by days_worked;
