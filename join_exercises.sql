@@ -1,2 +1,3 @@
-use employees;
-
+-- use employees;
+--
+-- SELECT CONCAT(e.first_name, ' ', e.last_name)
