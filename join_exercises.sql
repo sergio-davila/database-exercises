@@ -24,3 +24,9 @@ select title, count(title) from titles join dept_emp on dept_emp.emp_no = titles
 --               ON d.dept_no = de.dept_no
 -- WHERE d.dept_name = "Customer Service"
 -- GROUP BY title;
+
+select dept_name as 'Department Name', concat(employees.first_name, ' ', employees.last_name) as 'Department Manager', salary as 'Salary' from employees
+join dept_manager on dept_manager.emp_no = employees.emp_no
+join departments on departments.dept_no = dept_manager.dept_no
+join salaries on salaries.emp_no = dept_manager.emp_no
+where dept_manager.to_date = '9999-01-01' and salaries.to_date = '9999-01-01';
