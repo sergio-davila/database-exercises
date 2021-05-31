@@ -24,7 +24,16 @@ create table ads (
      foreign key (users_id) references users (id)
 );
 
-truncate ads;
+drop table if exists categories;
+create table categories (
+    id int unsigned auto_increment,
+    category varchar(100) not null,
+    primary key (id),
+    ads_id int unsigned not null,
+    foreign key (ads) references ads (id)
+)
+
+-- truncate ads;
 insert into ads(title, description, category, users_id)
 values('Selling laptop', 'Slightly used. $25 ', 'electronics', 1),
       ('Selling pots and pans', 'New pots and pans. Call for price', 'kitchen', 1),
